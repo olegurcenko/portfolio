@@ -1,0 +1,11 @@
+.App {
+  display: grid;
+  margin-inline: auto;
+  max-width: 1200px;
+  grid-template-areas: 
+  'navBar navBar main main main main'
+  'footer footer main main main main';
+  gap: 10px;
+  /* height: 100vh; */
+}
+
