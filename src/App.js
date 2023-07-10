@@ -10,7 +10,7 @@ function App(props) {
     <div className={styles.App}>
       {/* <Header className={styles.Header}/> */}
       <NavBar className={styles.NavBar}/>
-      <MainContent CardData={props.CardData}/>
+      <MainContent CardData={props.CardData} CardDataProjects={props.CardDataProjects}/>
       <Footer className={styles.Footer}/>
     </div>
   );

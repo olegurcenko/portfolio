@@ -2,9 +2,10 @@ import React from "react";
 import styles from './card.module.css'
 
 export const Card = (props) => {
-    let Technologies = props.technologies.map(technology => {
+    const Technologies = props.technologies.map(technology => {
+        return(
         <li className={styles.technologiesListElem}>{technology}</li>
-    })
+    )})
     return (
         <div className={styles.card}>
             <p className={styles.date}>{props.date}</p>
@@ -17,7 +18,6 @@ export const Card = (props) => {
                 <li className={styles.technologies}>
                     <ul className={styles.technologiesList}>
                         {Technologies}
-                        
                     </ul>
                 </li>
             </ul>

@@ -1,5 +1,6 @@
 export let CardData = [
     {
+        key: 0,
         date: '2016-2017',
         who: 'Developer',
         where: 'Scout Studio',
@@ -7,6 +8,7 @@ export let CardData = [
         technologiesList: ['HTML', 'CSS', 'JS'],
     },
     {
+        key: 1,
         date: '2016-2017',
         who: 'Developer',
         where: 'Scout Studio',
@@ -14,6 +16,7 @@ export let CardData = [
         technologiesList: ['HTML', 'CSS', 'JS'],
     },
     {
+        key: 2,
         date: '2016-2017',
         who: 'Developer',
         where: 'Scout Studio',
@@ -21,6 +24,23 @@ export let CardData = [
         technologiesList: ['HTML', 'CSS', 'JS'],
     },
     {
+        key: 3,
+        date: '2016-2017',
+        who: 'Developer',
+        where: 'Scout Studio',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic eius atque ad ducimus cumque nisi facilis impedit odit! Pariatur, explicabo.',
+        technologiesList: ['HTML', 'CSS', 'JS'],
+    },
+    {
+        key: 4,
+        date: '2016-2017',
+        who: 'Developer',
+        where: 'Scout Studio',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic eius atque ad ducimus cumque nisi facilis impedit odit! Pariatur, explicabo.',
+        technologiesList: ['HTML', 'CSS', 'JS'],
+    },
+    {
+        key: 5,
         date: '2016-2017',
         who: 'Developer',
         where: 'Scout Studio',

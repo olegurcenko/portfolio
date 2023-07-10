@@ -5,12 +5,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import { CardData } from './components/main/mainContent/experience/cards/cardData';
+import { CardDataProjects } from './components/main/mainContent/projects/cards/cardDataProjects'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // <React.StrictMode>
   <BrowserRouter>
-    <App CardData={CardData}/>
+    <App CardData={CardData} CardDataProjects={CardDataProjects}/>
   </BrowserRouter>
   // </React.StrictMode>
 );
