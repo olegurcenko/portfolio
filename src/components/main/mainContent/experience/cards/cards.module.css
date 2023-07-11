@@ -1,10 +1,27 @@
-.cardList{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    height: 85vh;
-    overflow-y: scroll;
+@media screen and (min-width: 800px) {
+    .cardList{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        height: 75vh;
+        margin-top: 10vh;
+        overflow-y: scroll;
+    }
+    .cardList::-webkit-scrollbar {
+        display: none;
+    }
 }
-.cardList::-webkit-scrollbar {
-    display: none;
+
+@media screen and (max-width: 800px) {
+    .cardList{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        height: 70vh;
+        overflow-y: scroll;
+        margin-inline: auto;
+    }
+    .cardList::-webkit-scrollbar {
+        display: none;
+    }
 }

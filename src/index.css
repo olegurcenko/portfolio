@@ -9,6 +9,10 @@
 	font-family: 'CustomFont'!important;
 }
 
+*::-webkit-scrollbar {
+	display: none;
+}
+
 @font-face {
 	font-family: 'CustomFont';
 	src: url(./fonts/PPTelegraf-Regular.otf)format('opentype');
