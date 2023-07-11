@@ -1,68 +1,80 @@
-.navBar {
-    /* height: 50vh; */
-    /* background-color: #B49594; */
-    grid-area: navBar;
-    margin-top: 50px;
-    /* padding-block: 50px; */
-    display: flex;
-    flex-direction: column;
-    height: 70vh;
-}
-/* ------------------------ */
-.nameStr {
-    font-size: 48px;
-    margin-left: 40px;
-}
-.positionStr {
-    font-size: 20px;
-    margin-left: 40px;
-    margin-top: 12px;
-    margin-bottom: 16px;
-}
-.skillsStr p {
-    margin-left: 40px;
-    opacity: 0.7;
-    font-size: 16px;
-}
-
-
-
-/* ------------------------ */
-.navBarList{
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
-    /* align-items: center; */
-    /* padding-block: 20px; */
-}
-@keyframes navActive {
-    from {
-        margin-left: 0;
+@media screen and (min-width: 800px) {
+    .navBar {
+        /* height: 50vh; */
+        /* background-color: #B49594; */
+        grid-area: navBar;
+        margin-top: 50px;
+        /* padding-block: 50px; */
+        display: flex;
+        flex-direction: column;
+        height: 70vh;
     }
-    to {
+    /* ------------------------ */
+    .nameStr {
+        font-size: 48px;
+        margin-left: 40px;
+    }
+    .positionStr {
+        font-size: 20px;
+        margin-left: 40px;
+        margin-top: 12px;
+        margin-bottom: 16px;
+    }
+    .skillsStr p {
+        margin-left: 40px;
+        opacity: 0.7;
+        font-size: 16px;
+    }
+    
+    
+    
+    /* ------------------------ */
+    .navBarList{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        /* align-items: center; */
+        /* padding-block: 20px; */
+    }
+    @keyframes navActive {
+        from {
+            margin-left: 0;
+        }
+        to {
+            margin-left: 10px;
+        }
+    }
+    .isActiveLink {
+        /* text-decoration: underline!important; */
+        opacity: 1!important;
+        animation: navActive .5s linear 1;
         margin-left: 10px;
     }
-}
-.isActiveLink {
-    /* text-decoration: underline!important; */
-    opacity: 1!important;
-    animation: navActive .5s linear 1;
-    margin-left: 10px;
-}
-
-.navBarElem {
-    font-size: 18px;
-    padding-block: 10px;
-    width: 50%;
-    text-align: left;
-    transition-duration: .3s;
-    /* text-decoration: none; */
-    /* text-align: center; */
-    margin-left: 40px;
-}
-.navBarElem a {
-    text-decoration: none;
-    opacity: .6;
+    
+    .navBarElem {
+        font-size: 18px;
+        padding-block: 10px;
+        width: 50%;
+        height: 30px;
+        margin-bottom: 25px;
+        text-align: left;
+        transition-duration: .3s;
+        /* text-decoration: none; */
+        /* text-align: center; */
+        margin-left: 40px;
+    }
+    .navBarElem a {
+        text-decoration: none;
+        opacity: .6;
+    }
 }
 
 
+@media screen and (max-width: 800px) {
+    .navBar {
+        display: flex;
+        flex-direction: column;
+        height: 20vh;
+        background-color: #9f9f9f76;
+    }
+}

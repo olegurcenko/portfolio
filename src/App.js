@@ -1,6 +1,5 @@
 import styles from './App.module.css';
 import { Footer } from './components/footer/footer';
-import { Header } from './components/header/header';
 import { MainContent } from './components/main/mainContent/mainContent';
 import { NavBar } from './components/main/navBar/navBar';
 
