@@ -1,4 +1,4 @@
-!/bin/bash
+/bin/bash
 
 # Собираем приложение
 npm run build
@@ -24,3 +24,4 @@ git push -f origin HEAD:build
 # Удаляем временную директорию сборки (опционально)
 cd ..
 rm -rf build
+
