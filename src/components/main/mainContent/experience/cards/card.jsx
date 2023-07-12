@@ -1,22 +1,21 @@
 import React from "react";
-import styles from './card.module.css'
 
 export const Card = (props) => {
     const Technologies = props.technologies.map(technology => {
         return(
-        <li className={styles.technologiesListElem}>{technology}</li>
+        <li className={props.styles.technologiesListElem}>{technology}</li>
     )})
     return (
-        <div className={styles.card}>
-            <p className={styles.date}>{props.date}</p>
-            <ul className={styles.content}>
-                <li className={styles.titles}>
-                    <p className={styles.who}>{props.who}</p>
-                    <p className={styles.where}>{props.where}</p>
+        <div className={props.styles.experienceCard}>
+            <p className={props.styles.date}>{props.date}</p>
+            <ul className={props.styles.content}>
+                <li className={props.styles.titles}>
+                    <p className={props.styles.who}>{props.who}</p>
+                    <p className={props.styles.where}>{props.where}</p>
                 </li>
-                <li className={styles.description}>{props.description}</li>
-                <li className={styles.technologies}>
-                    <ul className={styles.technologiesList}>
+                <li className={props.styles.description}>{props.description}</li>
+                <li className={props.styles.technologies}>
+                    <ul className={props.styles.technologiesList}>
                         {Technologies}
                     </ul>
                 </li>

@@ -1,4 +1,4 @@
-import styles from './App.module.css';
+// import styles from './App.module.css';
 import { Footer } from './components/footer/footer';
 import { MainContent } from './components/main/mainContent/mainContent';
 import { NavBar } from './components/main/navBar/navBar';
@@ -6,11 +6,11 @@ import { NavBar } from './components/main/navBar/navBar';
 
 function App(props) {
   return (
-    <div className={styles.App}>
+    <div className={props.s.App}>
       {/* <Header className={styles.Header}/> */}
-      <NavBar className={styles.NavBar}/>
-      <MainContent CardData={props.CardData} CardDataProjects={props.CardDataProjects}/>
-      <Footer className={styles.Footer}/>
+      <NavBar styles={props.s} className={props.s.NavBar}/>
+      <MainContent styles={props.s}  CardData={props.CardData} CardDataProjects={props.CardDataProjects}/>
+      <Footer styles={props.s} className={props.s.Footer}/>
     </div>
   );
 }

@@ -1,25 +1,24 @@
 import React from "react";
-import styles from './cardsProjects.module.css';
 
 export const CardProjects = (props) => {
     let keywords = props.projectTechn.map(technology => {
         return (
-            <li className={styles.techYeyword}>{technology}</li>
+            <li className={props.styles.techKeyword}>{technology}</li>
         )})
     return (
-        <div className={styles.card}>
-            <span className={styles.demoImgContainer}>
-                <img className={styles.demoImg} src={props.demoImg} alt=""/>
+        <div className={props.styles.projectCard}>
+            <span className={props.styles.demoImgContainer}>
+                <img className={props.styles.demoImg} src={props.demoImg} alt=""/>
             </span>
-            <ul className={styles.textList}>
-                <li className={styles.projectName}>
+            <ul className={props.styles.textList}>
+                <li className={props.styles.projectName}>
                     <a href="">{props.projectName}</a>
                 </li>
-                <li className={styles.projectDescr}>
+                <li className={props.styles.projectDescr}>
                     <p>{props.projectDescr}</p>
                 </li>
-                <li className={styles.projectTechn}>
-                    <ul className={styles.keywords}>
+                <li className={props.styles.projectTechn}>
+                    <ul className={props.styles.keywords}>
                         {keywords}
                     </ul>
                 </li>
