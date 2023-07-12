@@ -228,7 +228,7 @@ table {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  height: 70vh;
+  height: 65vh;
   overflow-y: scroll;
   margin-inline: auto;
 }
