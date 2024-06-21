@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+.footer {
+	margin-top: 40px;
+	.line {
+		height: 1px;
+		border-top: 1px solid #000;
+		transform: rotate(1deg);
+	}
+	.linksWrapper {
+		margin-inline: auto;
+		display: flex;
+		align-items: center;
+		max-width: 1200px;
+		justify-content: space-around;
+		a {
+			width: fit-content;
+		}
+		p {
+			font-family: "Lilita One", sans-serif;
+		}
+	}
+}

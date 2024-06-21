@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+.projectsBlock {
+	max-width: 1200px;
+	margin-inline: auto;
+	padding: 20px;
+	box-sizing: border-box;
+	.title {
+		margin-inline: auto;
+		font-family: "Lilita One", sans-serif;
+		max-width: 800px;
+		font-size: 80px;
+	}
+	.projectsDesct {
+		margin-inline: auto;
+		font-size: 24px;
+		max-width: 800px;
+		text-align: justify;
+	}
+	.projectCardsList {
+		display: flex;
+		justify-content: space-around;
+		margin-top: 50px;
+		flex-wrap: wrap;
+	}
+}

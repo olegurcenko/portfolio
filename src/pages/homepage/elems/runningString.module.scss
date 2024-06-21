@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+.runningStrElem {
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  width: 100%; /* Adjust as needed */
+//  font-family: 'Bebas Neue', sans-serif;
+  font-family: "Lilita One", sans-serif;
+//  background: #000; /* Background color */
+//  color: #fff; /* Text color */
+  font-size: 80px; /* Adjust font size as needed */
+  padding: 10px 0; /* Adjust padding as needed */
+  position: relative;
+}
+
+.stringInner {
+  display: flex;
+  white-space: nowrap;
+  animation: marquee 3s linear infinite;
+  //animation: marquee 10s linear infinite;
+}
+
+.stringInner > span {
+  text-align: center;
+  min-width: 600px;
+  padding-right: 100px; /* Adjust padding to create space between items */
+}
+
+.runningStrElem:hover .stringInner {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-700px);
+  }
+}
