@@ -16,14 +16,13 @@
 .stringInner {
   display: flex;
   white-space: nowrap;
-  animation: marquee 3s linear infinite;
+  animation: marquee 20s linear infinite;
   //animation: marquee 10s linear infinite;
 }
 
 .stringInner > span {
   text-align: center;
-  min-width: 600px;
-  padding-right: 100px; /* Adjust padding to create space between items */
+  min-width: 700px;
 }
 
 .runningStrElem:hover .stringInner {
@@ -35,6 +34,7 @@
     transform: translateX(0px);
   }
   100% {
-    transform: translateX(-700px);
+    transform: translateX(-1400px);
   }
 }
+

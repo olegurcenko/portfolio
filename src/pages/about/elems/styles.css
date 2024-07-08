@@ -1,0 +1,31 @@
+.world {
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	margin-left: 30px;
+	position: relative;
+  }
+  
+  .world .item {
+	box-sizing: border-box;
+	border: 1px solid #888;
+	background-color: #eee;
+  }
+  
+  .world .item.selected {
+	background-color: green;
+	border: 2px solid limegreen;
+  }
+  
+  .toolbox {
+	margin-left: 30px;
+  }
+  .tool {
+	display: inline-block;
+	padding-top: 10px;
+  }
+  
+  button.delete {
+	margin-left: 30px;
+	color: red;
+  }
+  
